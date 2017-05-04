@@ -1,1 +1,7 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/morgue scene/morgueWithPatient.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/morgue scene/morgue.unity
+  isLoaded: 1
+  isActive: 0
