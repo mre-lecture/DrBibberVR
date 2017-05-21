@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class HighscoreList : MonoBehaviour
 {
 	List<HighscoreEntry> list;
-	public Text displayUsername, displayTime;
 	public InputField inputUsername;
+	public Text displayUsername, displayTime;
 
 	void Start()
 	{
@@ -16,13 +16,14 @@ public class HighscoreList : MonoBehaviour
 
 	void addToList()
 	{
-		// highscorelist can only have 10 entries -> should be dynamic
+		// current: highscorelist is top 10 list (can only have 10 entries)
+		// maybe  : dynamic list with more than 10 entries
 		for(int i = 0; i < 10; i++)
 		{
 			if (PlayerPrefs.HasKey ("username" + i)) 
 			{
 				string user = PlayerPrefs.GetString ("username" + i);
-				string time = PlayerPrefs.GetFloat ("time" + i);
+				float time = PlayerPrefs.GetFloat ("time" + i);
 				HighscoreEntry entry = new HighscoreEntry (user, time);
 				list.Add (entry);
 			}
@@ -51,24 +52,25 @@ public class HighscoreList : MonoBehaviour
 	public void addEntry()
 	{
 		// current: testEntry but read in typed username
-		float testTime = 0.00;
-		HighscoreEntry newEntry = HighscoreEntry("test", testTime);
+		//float testTime = Random.Range(0.0f, 5.0f);
+		//string testUser = "testUser";
+		//HighscoreEntry newEntry = HighscoreEntry(testUser, testTime);
 
 		bool added = false;
-		for (int i = 0; i < list.Count; i++) 
-		{
-			if (list [i].newHighscore (newEntry.getTime ())) 
-			{
-				list.Insert (i, newEntry);
-				added = true;
-				break;
-			}
-		}
+		//for (int i = 0; i < list.Count; i++) 
+		//{
+		//	if (list [i].newHighscore (newEntry.getTime ())) 
+		//	{
+		//		list.Insert (i, newEntry);
+		//		added = true;
+		//		break;
+		//	}
+		//}
 
-		if (!added)
-			list.Add (newEntry);
+		//if (!added)
+		//	list.Add (newEntry);
 
-		showList ();
+		showList();
 		saveList();
 	}
 
@@ -83,9 +85,9 @@ public class HighscoreList : MonoBehaviour
 
 	public void deleteAll()
 	{
-		displayUsername = "";
-		displayTime = "";
-		list.Clear;
+		displayUsername.text = "";
+		displayTime.text = "";
+		list.Clear();
 		PlayerPrefs.DeleteAll ();
 	}
 

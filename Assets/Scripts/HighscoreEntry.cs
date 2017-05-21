@@ -20,9 +20,9 @@ public class HighscoreEntry {
 		return time;
 	}
 
-	public float getTimeString()
+	public string getTimeString()
 	{
-		return string.Format ("{0,5:0.00} sec.", time);
+		return string.Format("{0,5:0.00} sec.", time);
 	}
 
 	public bool newHighscore(float newTime)
