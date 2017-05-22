@@ -52,23 +52,23 @@ public class HighscoreList : MonoBehaviour
 	public void addEntry()
 	{
 		// current: testEntry but read in typed username
-		//float testTime = Random.Range(0.0f, 5.0f);
-		//string testUser = "testUser";
-		//HighscoreEntry newEntry = HighscoreEntry(testUser, testTime);
+		float testTime = Random.Range(0.0f, 5.0f);
+		string testUser = "testUser";
+		HighscoreEntry newEntry = new HighscoreEntry(testUser, testTime);
 
 		bool added = false;
-		//for (int i = 0; i < list.Count; i++) 
-		//{
-		//	if (list [i].newHighscore (newEntry.getTime ())) 
-		//	{
-		//		list.Insert (i, newEntry);
-		//		added = true;
-		//		break;
-		//	}
-		//}
+		for (int i = 0; i < list.Count; i++) 
+		{
+			if (list [i].newHighscore (newEntry.getTime ())) 
+			{
+				list.Insert (i, newEntry);
+				added = true;
+				break;
+			}
+		}
 
-		//if (!added)
-		//	list.Add (newEntry);
+		if (!added)
+			list.Add (newEntry);
 
 		showList();
 		saveList();
