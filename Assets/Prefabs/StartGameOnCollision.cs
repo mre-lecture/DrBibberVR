@@ -2,21 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartGameOnCollision : MonoBehaviour {
 
 	private float startTime;
 	private float elapsedTime;
-	Text currentTime;
+
+	private float minutes;
+	private float seconds;
+	private string textTime;
+	private Text currentTime;
+
 
 	void Awake(){
-		currentTime = GetComponent<Text>();
-		startTime = 0;	
+		startTime = 0;
+		Debug.Log ("Hello");
+
+		Text[] guiTexts = FindObjectsOfType<Text> ();
+
+		for (int i = 0; i < guiTexts.Length; i++) {
+			if ("currently_running_time".Equals (guiTexts [i].name)) {
+				currentTime = guiTexts [i];
+			}
+		}
 	}
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -24,10 +37,11 @@ public class StartGameOnCollision : MonoBehaviour {
 		if (startTime != 0)
 		{
 			elapsedTime = Time.time - startTime;
-			Debug.Log (elapsedTime);
-			float minutes = Mathf.Floor (elapsedTime / 60);
-			float seconds = elapsedTime % 60;
-			currentTime.text = minutes + ":" + seconds;
+			minutes = Mathf.Floor (elapsedTime / 60);
+			seconds = elapsedTime % 60;
+
+			textTime = string.Format ("{0:00}:{1:00}",minutes,seconds);
+			currentTime.text = textTime.ToString();
 		}
 	}
 
