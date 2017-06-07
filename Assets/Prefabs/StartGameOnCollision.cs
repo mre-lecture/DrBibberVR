@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +12,11 @@ public class StartGameOnCollision : MonoBehaviour {
 	private float seconds;
 	private string textTime;
 	private Text currentTime;
+
+	private bool isPlaying = false;
+
+	private GameObject startCube;
+	private Canvas startCanvas;
 
 
 	void Awake(){
@@ -29,19 +33,39 @@ public class StartGameOnCollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		startCube = GameObject.Find ("CubeStartGame");
+
+		Canvas canvas = FindObjectOfType<Canvas> ();
+		if("CanvasStartGame".Equals(canvas.name)){
+			startCanvas = canvas;
+		}
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
 		if (startTime != 0)
 		{
+			// set isPlaying=false, if all objects are grabbed and dropped to organ scale
+			isPlaying = true;
+
 			elapsedTime = Time.time - startTime;
 			minutes = Mathf.Floor (elapsedTime / 60);
 			seconds = elapsedTime % 60;
 
 			textTime = string.Format ("{0:00}:{1:00}",minutes,seconds);
-			currentTime.text = textTime.ToString();
+			currentTime.text = textTime.ToString ();
 		}
+
+		if (isPlaying) {
+			startCanvas.enabled = false;
+
+			BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();
+			foreach (BoxCollider boxCollider in collider) {
+				boxCollider.enabled = false;
+			}
+		}
+
 	}
 
 	void OnTriggerEnter(){
