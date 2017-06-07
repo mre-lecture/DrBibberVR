@@ -17,7 +17,6 @@ public class StartGameOnCollision : MonoBehaviour {
 
 	void Awake(){
 		startTime = 0;
-		Debug.Log ("Hello");
 
 		Text[] guiTexts = FindObjectsOfType<Text> ();
 

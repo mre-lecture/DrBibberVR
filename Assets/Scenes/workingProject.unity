@@ -4329,27 +4329,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Size.z
-      value: 88.49762
+      value: 25.215572
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.x
-      value: -1.3604678
+      value: -1.6646248
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Size.y
-      value: 133.97101
+      value: 2.1001458
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.y
-      value: 66.985504
+      value: 134.19542
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.z
-      value: 36.261745
+      value: 59.94877
       objectReference: {fileID: 0}
     - target: {fileID: 420158, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
+      propertyPath: m_Size.x
+      value: 25.254736
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
@@ -4368,8 +4376,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 48.548607, y: 227.899, z: 86.65385}
-  m_Center: {x: -0.00000005945219, y: 113.9495, z: 11.961434}
+  m_Size: {x: 9.252319, y: 227.899, z: 11.19913}
+  m_Center: {x: -3.0011477, y: 113.9495, z: -0.8990121}
 --- !u!65 &777784614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4380,8 +4388,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 39.112984, y: 63.848663, z: 104.77907}
-  m_Center: {x: -4.717854, y: 195.97432, z: 28.26921}
+  m_Size: {x: 37.771847, y: 63.848663, z: 10.746548}
+  m_Center: {x: -0.0181068, y: 195.97432, z: 62.714485}
 --- !u!4 &781318352 stripped
 Transform:
   m_PrefabParentObject: {fileID: 403928, guid: 947e113398f058643a47464fff50cae1, type: 2}
