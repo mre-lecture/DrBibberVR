@@ -44,18 +44,6 @@ public class StartGameOnCollision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (startTime != 0)
-		{
-			// set isPlaying=false, if all objects are grabbed and dropped to organ scale
-			isPlaying = true;
-
-			elapsedTime = Time.time - startTime;
-			minutes = Mathf.Floor (elapsedTime / 60);
-			seconds = elapsedTime % 60;
-
-			textTime = string.Format ("{0:00}:{1:00}",minutes,seconds);
-			currentTime.text = textTime.ToString ();
-		}
 
 		if (isPlaying) {
 			startCanvas.enabled = false;
@@ -66,9 +54,27 @@ public class StartGameOnCollision : MonoBehaviour {
 			}
 		}
 
+		if (startTime != 0 && isPlaying) {
+			elapsedTime = Time.time - startTime;
+			minutes = Mathf.Floor (elapsedTime / 60);
+			seconds = elapsedTime % 60;
+
+			textTime = string.Format ("{0:00}:{1:00}", minutes, seconds);
+			currentTime.text = textTime.ToString ();
+		} 
+
+
+
 	}
 
 	void OnTriggerEnter(){
 		startTime = Time.time;
+		// set isPlaying=false, if all objects are grabbed and dropped to organ scale
+		isPlaying = true;
+	}
+
+	void StoppingTime(bool stopTime){
+		isPlaying = !stopTime;
+		Debug.Log (isPlaying);
 	}
 }

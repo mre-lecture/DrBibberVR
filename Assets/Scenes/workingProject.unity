@@ -1214,7 +1214,7 @@ GameObject:
   - component: {fileID: 166305836}
   m_Layer: 0
   m_Name: cigarette
-  m_TagString: Untagged
+  m_TagString: StopTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1511,6 +1511,10 @@ Prefab:
     - target: {fileID: 2300000, guid: 0f9160e6b2676ef428f2b50678d274a8, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0f9160e6b2676ef428f2b50678d274a8, type: 2}
+      propertyPath: m_TagString
+      value: StopTime
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f9160e6b2676ef428f2b50678d274a8, type: 2}
@@ -2617,6 +2621,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -165.30101
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5a2cb3ad5709343a893e8057b7bdbdb2, type: 3}
+      propertyPath: m_TagString
+      value: StopTime
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400000, guid: 5a2cb3ad5709343a893e8057b7bdbdb2, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 5a2cb3ad5709343a893e8057b7bdbdb2, type: 3}
@@ -2881,7 +2889,7 @@ GameObject:
   - component: {fileID: 512832906}
   m_Layer: 0
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: StopTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3518,7 +3526,7 @@ GameObject:
   - component: {fileID: 605619748}
   m_Layer: 0
   m_Name: heart
-  m_TagString: Untagged
+  m_TagString: StopTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4332,15 +4340,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.x
-      value: -1.6646248
+      value: -1.6646262
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Size.y
-      value: 2.1001458
+      value: 4.3063164
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.y
-      value: 134.19542
+      value: 135.29842
       objectReference: {fileID: 0}
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Center.z
@@ -4357,6 +4365,14 @@ Prefab:
     - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
       propertyPath: m_Size.x
       value: 25.254736
+      objectReference: {fileID: 0}
+    - target: {fileID: 140444, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
+      propertyPath: m_TagString
+      value: StopTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6514072, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99272484fea26594a8ed43992df88cc8, type: 2}
@@ -4389,6 +4405,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 37.771847, y: 63.848663, z: 10.746548}
   m_Center: {x: -0.0181068, y: 195.97432, z: 62.714485}
+--- !u!65 &777784615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777784612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.539972, y: 8.600807, z: 27.170961}
+  m_Center: {x: -1.5747617, y: 132.48131, z: 62.106728}
+--- !u!114 &777784618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777784612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6e0970e9823564887f4f9d810f121e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &781318352 stripped
 Transform:
   m_PrefabParentObject: {fileID: 403928, guid: 947e113398f058643a47464fff50cae1, type: 2}
@@ -10419,7 +10458,7 @@ GameObject:
   - component: {fileID: 1926591827}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: StopTime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
