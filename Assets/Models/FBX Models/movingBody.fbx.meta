@@ -39,6 +39,12 @@ ModelImporter:
     100062: //RootNode
     100064: Potion
     100066: sig
+    100068: apple tape
+    100070: Bone Tape
+    100072: Heart Tape
+    100074: Potion Tape
+    100076: Sword Tape
+    100078: Plane
     400000: Armature
     400002: body
     400004: Bone
@@ -73,18 +79,30 @@ ModelImporter:
     400062: //RootNode
     400064: Potion
     400066: sig
+    400068: apple tape
+    400070: Bone Tape
+    400072: Heart Tape
+    400074: Potion Tape
+    400076: Sword Tape
+    400078: Plane
     2300000: body
     2300002: Bone
     2300004: heart
     2300006: Human
     2300008: Potion
     2300010: sig
+    2300012: koerper
+    2300014: koerper.002
+    2300016: Plane
     3300000: body
     3300002: Bone
     3300004: heart
     3300006: Human
     3300008: Potion
     3300010: sig
+    3300012: koerper
+    3300014: koerper.002
+    3300016: Plane
     4300000: Bone
     4300002: sig
     4300004: Potion
@@ -93,9 +111,24 @@ ModelImporter:
     4300010: koerper.002
     4300012: koerper
     4300014: body
+    4300016: Potion Tape
+    4300018: Bone Tape
+    4300020: Heart Tape
+    4300022: Sword Tape
+    4300024: apple tape
+    4300026: Plane
+    7400000: Armature|ArmatureAction
+    7400002: Armature|ArmatureAction.001
     9500000: //RootNode
+    11100000: //RootNode
     13700000: koerper
     13700002: koerper.002
+    13700004: apple tape
+    13700006: Bone Tape
+    13700008: Heart Tape
+    13700010: Human
+    13700012: Potion Tape
+    13700014: Sword Tape
   materials:
     importMaterials: 1
     materialName: 0
@@ -157,10 +190,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -34,6 +34,13 @@ ModelImporter:
     100052: sig
     100054: Bone_0
     100056: Human
+    100058: Human_001
+    100060: apple_tape
+    100062: Bone_Tape
+    100064: Heart_Tape
+    100066: Potion_Tape
+    100068: Sword_Tape
+    100070: Plane
     400000: Armature
     400002: body
     400004: Bone
@@ -63,18 +70,33 @@ ModelImporter:
     400052: sig
     400054: Bone_0
     400056: Human
+    400058: Human_001
+    400060: apple_tape
+    400062: Bone_Tape
+    400064: Heart_Tape
+    400066: Potion_Tape
+    400068: Sword_Tape
+    400070: Plane
     2300000: body
     2300002: heart
     2300004: Potion
     2300006: sig
     2300008: Bone
     2300010: Human
+    2300012: Human_001
+    2300014: koerper
+    2300016: koerper_002
+    2300018: Plane
     3300000: body
     3300002: heart
     3300004: Potion
     3300006: sig
     3300008: Bone
     3300010: Human
+    3300012: Human_001
+    3300014: koerper
+    3300016: koerper_002
+    3300018: Plane
     4300000: sig
     4300002: Potion
     4300004: heart
@@ -84,12 +106,26 @@ ModelImporter:
     4300012: body
     4300014: Bone
     4300016: Human
+    4300018: Human_001
+    4300020: Potion_Tape
+    4300022: Bone_Tape
+    4300024: Heart_Tape
+    4300026: Sword_Tape
+    4300028: apple_tape
+    4300030: Plane
     7400000: Default Take
+    7400002: ArmatureAction_001
     9500000: //RootNode
+    11100000: //RootNode
     13700000: koerper
     13700002: koerper_001
     13700004: koerper_002
     13700006: Human
+    13700008: apple_tape
+    13700010: Bone_Tape
+    13700012: Heart_Tape
+    13700014: Potion_Tape
+    13700016: Sword_Tape
   materials:
     importMaterials: 1
     materialName: 0
@@ -151,10 +187,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
