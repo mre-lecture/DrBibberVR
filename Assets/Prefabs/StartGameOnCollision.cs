@@ -75,6 +75,12 @@ public class StartGameOnCollision : MonoBehaviour {
 
 	void StoppingTime(bool stopTime){
 		isPlaying = !stopTime;
-		Debug.Log (isPlaying);
+		startCanvas.enabled = true;
+
+		BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();
+		foreach (BoxCollider boxCollider in collider) {
+			boxCollider.enabled = true;
+		}
+
 	}
 }

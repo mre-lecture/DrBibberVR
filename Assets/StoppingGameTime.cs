@@ -23,6 +23,7 @@ public class StoppingGameTime : MonoBehaviour {
 	void Update () {
 		if (numberOfGrabObjects == countNumberOfGrabObjects) {
 			instrumentTrolley.BroadcastMessage ("StoppingTime", true);
+			countNumberOfGrabObjects = 0;
 		}
 	}
 
