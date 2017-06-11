@@ -9,13 +9,19 @@ public class StoppingGameTime : MonoBehaviour {
 	private int countNumberOfGrabObjects;
 	private string specificTag;
 	private GameObject instrumentTrolley;
+	private GameObject[] gameObjectsGrab;
+
+	void Awake(){
+		specificTag = "StopTime";
+		instrumentTrolley = GameObject.Find ("instrument_trolley");
+		gameObjectsGrab = GameObject.FindGameObjectsWithTag (specificTag);
+		numberOfGrabObjects = gameObjectsGrab.Length - 1;
+	
+	}
 
 	// Use this for initialization
 	void Start () {
-		specificTag = "StopTime";
-		instrumentTrolley = GameObject.Find ("instrument_trolley");
-		GameObject[] gameObjects = GameObject.FindGameObjectsWithTag (specificTag);
-		numberOfGrabObjects = GameObject.FindGameObjectsWithTag (specificTag).Length - 1;
+		
 
 	}
 	
@@ -37,7 +43,15 @@ public class StoppingGameTime : MonoBehaviour {
 //			Destroy(other.GetComponent("Interactable"), 10);
 
 		}
-			
+	}
 
+	void SetGrabObjectsActive(bool active){
+		for (int i = 0; i < gameObjectsGrab.Length; i++) {
+			if ("organ_scale".Equals (gameObjectsGrab [i].name)) {
+
+			} else {
+				gameObjectsGrab [i].SetActive (active);
+			}
+		}
 	}
 }

@@ -18,6 +18,7 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject startCube;
 	private Canvas startCanvas;
 
+	private GameObject organScale;
 
 	void Awake(){
 		startTime = 0;
@@ -29,6 +30,10 @@ public class StartGameOnCollision : MonoBehaviour {
 				currentTime = guiTexts [i];
 			}
 		}
+
+		organScale = GameObject.Find ("organ_scale");
+		Debug.Log (organScale.name);
+		organScale.BroadcastMessage ("SetGrabObjectsActive", false);
 	}
 
 	// Use this for initialization
@@ -39,6 +44,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		if("CanvasStartGame".Equals(canvas.name)){
 			startCanvas = canvas;
 		}
+
+
 	}
 
 	
@@ -71,6 +78,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		startTime = Time.time;
 		// set isPlaying=false, if all objects are grabbed and dropped to organ scale
 		isPlaying = true;
+
+		organScale.BroadcastMessage("SetGrabObjectsActive", true);
 	}
 
 	void StoppingTime(bool stopTime){
@@ -81,6 +90,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		foreach (BoxCollider boxCollider in collider) {
 			boxCollider.enabled = true;
 		}
+
+		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 
 	}
 }
