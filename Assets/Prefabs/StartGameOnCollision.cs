@@ -19,6 +19,8 @@ public class StartGameOnCollision : MonoBehaviour {
 	private Canvas startCanvas;
 
 	private GameObject organScale;
+	private GameObject deadMan;
+	private GameObject deadManWithHoles;
 
 	void Awake(){
 		startTime = 0;
@@ -34,6 +36,10 @@ public class StartGameOnCollision : MonoBehaviour {
 		organScale = GameObject.Find ("organ_scale");
 		Debug.Log (organScale.name);
 		organScale.BroadcastMessage ("SetGrabObjectsActive", false);
+
+		deadMan = GameObject.Find("dead_man");
+		deadManWithHoles = GameObject.Find ("Patient");
+		deadManWithHoles.SetActive (false);
 	}
 
 	// Use this for initialization
@@ -79,6 +85,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		// set isPlaying=false, if all objects are grabbed and dropped to organ scale
 		isPlaying = true;
 
+		deadMan.SetActive (false);
+		deadManWithHoles.SetActive (true);
 		organScale.BroadcastMessage("SetGrabObjectsActive", true);
 	}
 
@@ -90,6 +98,9 @@ public class StartGameOnCollision : MonoBehaviour {
 		foreach (BoxCollider boxCollider in collider) {
 			boxCollider.enabled = true;
 		}
+
+		deadMan.SetActive (true);
+		deadManWithHoles.SetActive (false);
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 
