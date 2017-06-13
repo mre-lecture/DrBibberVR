@@ -40,6 +40,20 @@ ModelImporter:
     100064: Plane
     100066: Potion_Tape
     100068: Sword_Tape
+    100070: AppleSep
+    100072: BoneSep
+    100074: bottle
+    100076: HeartSep_001
+    100078: Human_001
+    100080: PotionSep
+    100082: SwordSep
+    100084: Donuts
+    100086: Milk
+    100088: monkey
+    100090: DonutSep
+    100092: HeartSep
+    100094: MonkeySep
+    100096: smartphone_low
     400000: Armature
     400002: body
     400004: Bone
@@ -75,6 +89,20 @@ ModelImporter:
     400064: Plane
     400066: Potion_Tape
     400068: Sword_Tape
+    400070: AppleSep
+    400072: BoneSep
+    400074: bottle
+    400076: HeartSep_001
+    400078: Human_001
+    400080: PotionSep
+    400082: SwordSep
+    400084: Donuts
+    400086: Milk
+    400088: monkey
+    400090: DonutSep
+    400092: HeartSep
+    400094: MonkeySep
+    400096: smartphone_low
     2300000: body
     2300002: heart
     2300004: Potion
@@ -82,6 +110,11 @@ ModelImporter:
     2300008: Bone
     2300010: Human
     2300012: Plane
+    2300014: bottle
+    2300016: Donuts
+    2300018: Milk
+    2300020: monkey
+    2300022: smartphone_low
     3300000: body
     3300002: heart
     3300004: Potion
@@ -89,6 +122,11 @@ ModelImporter:
     3300008: Bone
     3300010: Human
     3300012: Plane
+    3300014: bottle
+    3300016: Donuts
+    3300018: Milk
+    3300020: monkey
+    3300022: smartphone_low
     4300000: sig
     4300002: Potion
     4300004: heart
@@ -104,6 +142,20 @@ ModelImporter:
     4300024: Heart_Tape
     4300026: Sword_Tape
     4300028: apple_tape
+    4300030: bottle
+    4300032: Human_001
+    4300034: BoneSep
+    4300036: PotionSep
+    4300038: SwordSep
+    4300040: HeartSep_001
+    4300042: AppleSep
+    4300044: monkey
+    4300046: Donuts
+    4300048: Milk
+    4300050: smartphone_low
+    4300052: DonutSep
+    4300054: HeartSep
+    4300056: MonkeySep
     7400000: Default Take
     7400002: ArmatureAction_001
     9500000: //RootNode
@@ -116,6 +168,15 @@ ModelImporter:
     13700012: Heart_Tape
     13700014: Potion_Tape
     13700016: Sword_Tape
+    13700018: AppleSep
+    13700020: BoneSep
+    13700022: HeartSep_001
+    13700024: Human_001
+    13700026: PotionSep
+    13700028: SwordSep
+    13700030: DonutSep
+    13700032: HeartSep
+    13700034: MonkeySep
   materials:
     importMaterials: 1
     materialName: 0
