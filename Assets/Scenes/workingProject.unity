@@ -1410,41 +1410,6 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_PrefabInternal: {fileID: 578925234}
---- !u!114 &170678927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170678926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &170678930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170678926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &170678931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170678926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c129e7f45e6624d94e66b73f9b1728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1941450134143042, guid: d7800674f24a47e4ebae4c0ae7558c49,
-    type: 2}
 --- !u!65 &170678932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2641,41 +2606,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_PrefabInternal: {fileID: 578925234}
---- !u!114 &412684601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 412684600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &412684604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 412684600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &412684605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 412684600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09c129e7f45e6624d94e66b73f9b1728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefab: {fileID: 1941450134143042, guid: d7800674f24a47e4ebae4c0ae7558c49,
-    type: 2}
 --- !u!65 &412684606
 BoxCollider:
   m_ObjectHideFlags: 0
