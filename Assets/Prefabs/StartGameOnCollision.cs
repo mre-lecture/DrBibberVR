@@ -34,12 +34,10 @@ public class StartGameOnCollision : MonoBehaviour {
 		}
 
 		organScale = GameObject.Find ("organ_scale");
-		Debug.Log (organScale.name);
-		organScale.BroadcastMessage ("SetGrabObjectsActive", false);
 
 		deadMan = GameObject.Find("dead_man");
 		deadManWithHoles = GameObject.Find ("Patient");
-		deadManWithHoles.SetActive (false);
+
 	}
 
 	// Use this for initialization
@@ -50,7 +48,7 @@ public class StartGameOnCollision : MonoBehaviour {
 		if("CanvasStartGame".Equals(canvas.name)){
 			startCanvas = canvas;
 		}
-
+		deadManWithHoles.SetActive (false);
 
 	}
 
