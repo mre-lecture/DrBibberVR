@@ -1421,6 +1421,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &170678928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170678926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e8a839a7c5b7e4580c59e305fb5f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  color: {r: 0.09688579, g: 0.8014317, b: 0.9411765, a: 0}
+  thickness: 0.002
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
 --- !u!114 &170678930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,7 +1456,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170678926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09c129e7f45e6624d94e66b73f9b1728, type: 3}
   m_Name: 
@@ -2652,6 +2670,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6db2634ba8e4abeac50c336072ec4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &412684602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412684600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e8a839a7c5b7e4580c59e305fb5f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+  thickness: 0.002
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
 --- !u!114 &412684604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +2705,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412684600}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09c129e7f45e6624d94e66b73f9b1728, type: 3}
   m_Name: 
@@ -6500,7 +6536,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!4 &1093289595 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 0e070729468964236965f0db8cc97e97, type: 3}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 1093289594}
 --- !u!1 &1093289596 stripped
 GameObject:
@@ -10073,7 +10109,7 @@ MonoBehaviour:
   estimateOnAwake: 0
 --- !u!4 &1620873568 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 0e070729468964236965f0db8cc97e97, type: 3}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 1620873561}
 --- !u!1001 &1621730897
 Prefab:
