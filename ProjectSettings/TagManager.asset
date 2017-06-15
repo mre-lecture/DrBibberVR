@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - StopTime
+  - HumanTag
+  - TapeTag
+  - Seperate
   layers:
   - Default
   - TransparentFX
