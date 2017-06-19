@@ -12,7 +12,10 @@ public class KeyboardOutputDisplay : KeyboardOutputObject {
 
     public override void ReceiveKeyboardOutput(string value) {
         handleOverflowHorizontal();
-        display.text += value;
+        if(display.text.Length < 10)
+        {
+            display.text += value;
+        }
     }
 
     public override void ReceiveKeyboardOutputEnter() {
