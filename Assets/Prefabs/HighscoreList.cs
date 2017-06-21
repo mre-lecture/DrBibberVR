@@ -9,7 +9,6 @@ public class HighscoreList : MonoBehaviour
 	public Text displayUsername, displayTime, inputTime;
 	public TextMesh inputUsername;
 
-	private GameObject insertCube;
 
 
 	void Start()
@@ -17,7 +16,6 @@ public class HighscoreList : MonoBehaviour
 		list = new List<HighscoreEntry> ();
 		addToList ();
 
-		insertCube = GameObject.Find ("insertCube");
 	}
 
 	void addToList()
@@ -78,13 +76,9 @@ public class HighscoreList : MonoBehaviour
 
 	void OnTriggerEnter(){
 		addEntry ();
+		SetInsertCubeEnabled (false);
 
-		BoxCollider[] collider = insertCube.GetComponents<BoxCollider> ();
-		foreach (BoxCollider boxCollider in collider) {
-			boxCollider.enabled = false;
-		}
-		insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
-
+	
 	}
 
 
@@ -97,5 +91,14 @@ public class HighscoreList : MonoBehaviour
 		}
 	}
 
+
+	void SetInsertCubeEnabled(bool enabled){
+	    //BoxCollider[] collider = gameObject.GetComponents<BoxCollider> ();
+		//foreach (BoxCollider boxCollider in collider) {
+		//	boxCollider.enabled = enabled;
+		//}
+
+		gameObject.SetActive(enabled);
+	}
 }
 
