@@ -57,8 +57,10 @@ public class StartGameOnCollision : MonoBehaviour {
 		}
 		deadManWithHoles.SetActive (false);
 
-		insertCube = GameObject.Find ("insertCube");
-	}
+        insertCube = GameObject.Find("insertCube");
+  
+
+    }
 
 	
 	// Update is called once per frame
@@ -93,7 +95,7 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadManWithHoles.SetActive (true);
 		organScale.BroadcastMessage("SetGrabObjectsActive", true);
 
-		insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
+        insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
 
 	}
 

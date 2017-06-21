@@ -12,7 +12,11 @@ public class KeyboardOutputDisplay : KeyboardOutputObject {
 
     public override void ReceiveKeyboardOutput(string value) {
         handleOverflowHorizontal();
-        if(display.text.Length < 10)
+        if (display.text.Equals("Enter Name"))
+        {
+            display.text = "";
+        }
+        if (display.text.Length < 10)
         {
             display.text += value;
         }
@@ -25,6 +29,10 @@ public class KeyboardOutputDisplay : KeyboardOutputObject {
 
     public override void ReceiveKeyboardOutputBackspace() {
         int displayTextLength = display.text.Length;
+        if (display.text.Equals("Enter Name"))
+        {
+            display.text = "";  
+        }
         if (displayTextLength != 0) {
             if (display.text.Substring(Math.Max(0, displayTextLength - System.Environment.NewLine.Length)) == System.Environment.NewLine) {
                 display.text = display.text.Substring(0, displayTextLength - System.Environment.NewLine.Length);
