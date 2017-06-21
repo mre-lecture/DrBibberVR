@@ -109,5 +109,5 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 
-	}
+	}		
 }

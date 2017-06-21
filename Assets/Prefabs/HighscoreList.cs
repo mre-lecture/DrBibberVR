@@ -5,8 +5,9 @@ using System.Collections.Generic;
 public class HighscoreList : MonoBehaviour
 {
 	List<HighscoreEntry> list;
-	public InputField inputUsername;
-	public Text displayUsername, displayTime;
+
+	public Text displayUsername, displayTime, inputTime;
+	public TextMesh inputUsername;
 
 	void Start()
 	{
@@ -16,14 +17,12 @@ public class HighscoreList : MonoBehaviour
 
 	void addToList()
 	{
-		// current: highscorelist is top 10 list (can only have 10 entries)
-		// maybe  : dynamic list with more than 10 entries
 		for(int i = 0; i < 10; i++)
 		{
 			if (PlayerPrefs.HasKey ("username" + i)) 
 			{
 				string user = PlayerPrefs.GetString ("username" + i);
-				float time = PlayerPrefs.GetFloat ("time" + i);
+				string time = PlayerPrefs.GetString ("time" + i);
 				HighscoreEntry entry = new HighscoreEntry (user, time);
 				list.Add (entry);
 			}
@@ -41,7 +40,7 @@ public class HighscoreList : MonoBehaviour
 
 		for (int i = 0; i < list.Count && i < 10; i++) 
 		{
-			username += list [i].getUsername () + "\n";
+			username += i + ". " + list [i].getUsername () + "\n";
 			t += list [i].getTimeString () + "\n";
 		}
 
@@ -51,10 +50,8 @@ public class HighscoreList : MonoBehaviour
 
 	public void addEntry()
 	{
-		// current: testEntry but read in typed username
-		float testTime = Random.Range(0.0f, 5.0f);
-		string testUser = "testUser";
-		HighscoreEntry newEntry = new HighscoreEntry(testUser, testTime);
+
+		HighscoreEntry newEntry = new HighscoreEntry(inputUsername.text, inputTime.text);
 
 		bool added = false;
 		for (int i = 0; i < list.Count; i++) 
@@ -74,24 +71,19 @@ public class HighscoreList : MonoBehaviour
 		saveList();
 	}
 
+	void OnTriggerEnter(){
+		addEntry ();
+	}
+
+
 	void saveList()
 	{
 		for (int i = 0; i < list.Count; i++) 
 		{
 			PlayerPrefs.SetString ("username" + i, list [i].getUsername ());
-			PlayerPrefs.SetFloat ("time" + i, list [i].getTime ());
+			PlayerPrefs.SetString ("time" + i, list [i].getTime ());
 		}
 	}
-
-	public void deleteAll()
-	{
-		displayUsername.text = "";
-		displayTime.text = "";
-		list.Clear();
-		PlayerPrefs.DeleteAll ();
-	}
-
-	// maybe delete only one entry
 
 }
 

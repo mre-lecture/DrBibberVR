@@ -2,9 +2,9 @@
 public class HighscoreEntry {
 
 	string username;
-	float time;
+	string time;
 
-	public HighscoreEntry(string u, float t)
+	public HighscoreEntry(string u, string t)
 	{
 		username = u;
 		time = t;
@@ -15,21 +15,22 @@ public class HighscoreEntry {
 		return username;
 	}
 
-	public float getTime()
+	public string getTime()
 	{
 		return time;
 	}
 
 	public string getTimeString()
 	{
-		return string.Format("{0,5:0.00} sec.", time);
+		return time;
 	}
 
-	public bool newHighscore(float newTime)
+	public bool newHighscore(string newTime)
 	{
-		if (time > newTime)
+		if (time.CompareTo (newTime) < 1)
 			return true;
-		else
+		 else
 			return false;
+
 	}
 }
