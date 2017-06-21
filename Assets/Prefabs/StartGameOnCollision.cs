@@ -57,6 +57,7 @@ public class StartGameOnCollision : MonoBehaviour {
 	void Update () {
 
 		if (isPlaying) {
+			Debug.Log ("Canvas Disabled");
 			startCanvas.enabled = false;
 
 			BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();
