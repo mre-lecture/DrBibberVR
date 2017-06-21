@@ -21,8 +21,8 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject organScale;
 	private GameObject deadMan;
 	private GameObject deadManWithHoles;
-	private GameObject insertCube;
 
+	private GameObject insertCube;
 
 	void Awake(){
 		startTime = 0;
@@ -44,10 +44,8 @@ public class StartGameOnCollision : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
 		startCube = GameObject.Find ("CubeStartGame");
-
-
-		insertCube = GameObject.Find ("insertCube");
 
 		Canvas [] canvas = FindObjectsOfType<Canvas> ();
 
@@ -58,6 +56,8 @@ public class StartGameOnCollision : MonoBehaviour {
 			}
 		}
 		deadManWithHoles.SetActive (false);
+
+		insertCube = GameObject.Find ("insertCube");
 	}
 
 	
@@ -81,20 +81,19 @@ public class StartGameOnCollision : MonoBehaviour {
 			textTime = string.Format ("{0:00}:{1:00}", minutes, seconds);
 			currentTime.text = textTime.ToString ();
 		} 
-
-
-
+			
 	}
 
 	void OnTriggerEnter(){
 		startTime = Time.time;
 		// set isPlaying=false, if all objects are grabbed and dropped to organ scale
 		isPlaying = true;
-		insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
 
 		deadMan.SetActive (false);
 		deadManWithHoles.SetActive (true);
 		organScale.BroadcastMessage("SetGrabObjectsActive", true);
+
+		insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
 
 	}
 
@@ -112,5 +111,6 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 
+		insertCube.BroadcastMessage("SetInsertCubeEnabled", true);
 	}		
 }
