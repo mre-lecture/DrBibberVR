@@ -51,12 +51,8 @@ public class StartGameOnCollision : MonoBehaviour {
 			if("CanvasStartGame".Equals(canvas[i].name)){
 				startCanvas = canvas[i];
 			}
-
 		}
-
-
 		deadManWithHoles.SetActive (false);
-
 	}
 
 	
