@@ -13,7 +13,6 @@ public class SoundTrigger : MonoBehaviour {
 
 			//Wenn die AudioSource noch nicht gestartet wurde
 			if (!audioSource.isPlaying) {
-				Debug.Log ("Call AudioDatei - Button");	
 				//dann spiele den AudioClip der AudioSource ab
 				audioSource.Play ();
 			}

@@ -44,10 +44,18 @@ public class StartGameOnCollision : MonoBehaviour {
 	void Start () {
 		startCube = GameObject.Find ("CubeStartGame");
 
-		Canvas canvas = FindObjectOfType<Canvas> ();
-		if("CanvasStartGame".Equals(canvas.name)){
-			startCanvas = canvas;
+		Canvas [] canvas = FindObjectsOfType<Canvas> ();
+
+		for (int i = 0; i < canvas.Length; i++) {
+		
+			if("CanvasStartGame".Equals(canvas[i].name)){
+				startCanvas = canvas[i];
+				Debug.Log ("Canvas found");
+			}
+
 		}
+
+
 		deadManWithHoles.SetActive (false);
 
 	}
@@ -57,7 +65,6 @@ public class StartGameOnCollision : MonoBehaviour {
 	void Update () {
 
 		if (isPlaying) {
-			Debug.Log ("Canvas Disabled");
 			startCanvas.enabled = false;
 
 			BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();

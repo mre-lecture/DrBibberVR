@@ -24,7 +24,6 @@ public class StoppingGameTime : MonoBehaviour {
 		gameObjectsPosition = new Dictionary<string, Vector3> ();
 		gameObjectsOrientation = new Dictionary<string,Quaternion> ();
 
-		Debug.Log ("Get Transform of GrabObjects");
 		for (int i = 0; i < gameObjectsGrab.Length; i++) {
 			gameObjectsPosition.Add (gameObjectsGrab [i].name, gameObjectsGrab [i].transform.position);
 			gameObjectsOrientation.Add (gameObjectsGrab [i].name, gameObjectsGrab [i].transform.rotation);
