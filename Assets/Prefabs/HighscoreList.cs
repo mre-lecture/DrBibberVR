@@ -9,10 +9,16 @@ public class HighscoreList : MonoBehaviour
 	public Text displayUsername, displayTime, inputTime;
 	public TextMesh inputUsername;
 
+
+	private GameObject insertCube;
+
+
 	void Start()
 	{
 		list = new List<HighscoreEntry> ();
 		addToList ();
+
+		insertCube = GameObject.Find ("insertCube");
 	}
 
 	void addToList()
@@ -40,7 +46,7 @@ public class HighscoreList : MonoBehaviour
 
 		for (int i = 0; i < list.Count && i < 10; i++) 
 		{
-			username += i + ". " + list [i].getUsername () + "\n";
+			username += i+1 + ". " + list [i].getUsername () + "\n";
 			t += list [i].getTimeString () + "\n";
 		}
 

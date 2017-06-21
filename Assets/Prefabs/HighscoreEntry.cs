@@ -28,9 +28,9 @@ public class HighscoreEntry {
 	public bool newHighscore(string newTime)
 	{
 		if (time.CompareTo (newTime) < 1)
-			return true;
-		 else
 			return false;
+		 else
+			return true;
 
 	}
 }

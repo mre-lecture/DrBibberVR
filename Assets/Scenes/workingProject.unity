@@ -6825,7 +6825,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 877100976}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 2.5}
   m_LocalScale: {x: 0.4, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 882965936}
@@ -6833,7 +6833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: -0}
+  m_AnchoredPosition: {x: -4.42, y: -0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881345565
@@ -7774,7 +7774,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -2.06
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7782,7 +7782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 1.235
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -11748,7 +11748,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.005
+      value: -2.028
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -11756,7 +11756,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.072
+      value: 1.398
       objectReference: {fileID: 0}
     - target: {fileID: 4000012440025794, guid: 44c68b31027368041b85163b3a43fe3d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -16318,7 +16318,7 @@ GameObject:
   - component: {fileID: 1992814045}
   - component: {fileID: 1992814048}
   m_Layer: 0
-  m_Name: inputCube
+  m_Name: insertCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
