@@ -6,8 +6,11 @@ TagManager:
   tags:
   - StopTime
   - HumanTag
-  - TapeTag
-  - Seperate
+  - AnimatedHumanTag
+  - HoleManagerTag
+  - ManWithoutHoleTag
+  - HumanWithHoles
+  - HumanWithoutAnimation
   layers:
   - Default
   - TransparentFX

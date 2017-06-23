@@ -1,171 +1,159 @@
 fileFormatVersion: 2
-guid: ddd4576d8568c4bfcaab80a53c72290b
-timeCreated: 1497465465
+guid: bf465630893b74a63a3e2e5f174a98ce
+timeCreated: 1498175493
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: apple tape
-    100002: AppleSep
-    100004: Armature
-    100006: Bone
-    100008: Bone 1
-    100010: Bone Tape
-    100012: Bone.001
-    100014: Bone.001_L
-    100016: Bone.001_L.001
-    100018: Bone.001_L.002
-    100020: Bone.001_L.003
-    100022: Bone.001_L.003_end
-    100024: Bone.001_R
-    100026: Bone.001_R.001
-    100028: Bone.001_R.002
-    100030: Bone.001_R.003
-    100032: Bone.001_R.003_end
-    100034: Bone_L.001
-    100036: Bone_L.002
-    100038: Bone_L.003
-    100040: Bone_L.003_end
-    100042: Bone_R.001
-    100044: Bone_R.002
-    100046: Bone_R.003
-    100048: Bone_R.003_end
-    100050: BoneSep
-    100052: bottle
-    100054: Donuts
-    100056: DonutSep
-    100058: heart
-    100060: Heart Tape
-    100062: HeartSep
-    100064: Human
-    100066: Human.001
-    100068: Milk
-    100070: monkey
-    100072: MonkeySep
-    100074: //RootNode
-    100076: Potion
-    100078: Potion Tape
+    100000: AppleSep
+    100002: Armature
+    100004: Bone
+    100006: Bone 1
+    100008: Bone.001
+    100010: Bone.001_L
+    100012: Bone.001_L.001
+    100014: Bone.001_L.002
+    100016: Bone.001_L.003
+    100018: Bone.001_L.003_end
+    100020: Bone.001_R
+    100022: Bone.001_R.001
+    100024: Bone.001_R.002
+    100026: Bone.001_R.003
+    100028: Bone.001_R.003_end
+    100030: Bone_L.001
+    100032: Bone_L.002
+    100034: Bone_L.003
+    100036: Bone_L.003_end
+    100038: Bone_R.001
+    100040: Bone_R.002
+    100042: Bone_R.003
+    100044: Bone_R.003_end
+    100046: BoneSep
+    100048: bottle
+    100050: BottleSep
+    100052: Cake
+    100054: cakesep
+    100056: CigaretteSep
+    100058: Donuts
+    100060: DonutSep
+    100062: heart
+    100064: HeartSep
+    100066: Human
+    100068: MilkSep
+    100070: MilkSep.001
+    100072: monkey
+    100074: MonkeySep
+    100076: //RootNode
+    100078: Potion
     100080: PotionSep
     100082: sig
     100084: smartphone_low
-    100086: Sword Tape
+    100086: SmartSep
     100088: SwordSep
-    100090: Apple Tape
-    100092: BottleSep
-    100094: MilkSep
-    400000: apple tape
-    400002: AppleSep
-    400004: Armature
-    400006: Bone
-    400008: Bone 1
-    400010: Bone Tape
-    400012: Bone.001
-    400014: Bone.001_L
-    400016: Bone.001_L.001
-    400018: Bone.001_L.002
-    400020: Bone.001_L.003
-    400022: Bone.001_L.003_end
-    400024: Bone.001_R
-    400026: Bone.001_R.001
-    400028: Bone.001_R.002
-    400030: Bone.001_R.003
-    400032: Bone.001_R.003_end
-    400034: Bone_L.001
-    400036: Bone_L.002
-    400038: Bone_L.003
-    400040: Bone_L.003_end
-    400042: Bone_R.001
-    400044: Bone_R.002
-    400046: Bone_R.003
-    400048: Bone_R.003_end
-    400050: BoneSep
-    400052: bottle
-    400054: Donuts
-    400056: DonutSep
-    400058: heart
-    400060: Heart Tape
-    400062: HeartSep
-    400064: Human
-    400066: Human.001
-    400068: Milk
-    400070: monkey
-    400072: MonkeySep
-    400074: //RootNode
-    400076: Potion
-    400078: Potion Tape
+    400000: AppleSep
+    400002: Armature
+    400004: Bone
+    400006: Bone 1
+    400008: Bone.001
+    400010: Bone.001_L
+    400012: Bone.001_L.001
+    400014: Bone.001_L.002
+    400016: Bone.001_L.003
+    400018: Bone.001_L.003_end
+    400020: Bone.001_R
+    400022: Bone.001_R.001
+    400024: Bone.001_R.002
+    400026: Bone.001_R.003
+    400028: Bone.001_R.003_end
+    400030: Bone_L.001
+    400032: Bone_L.002
+    400034: Bone_L.003
+    400036: Bone_L.003_end
+    400038: Bone_R.001
+    400040: Bone_R.002
+    400042: Bone_R.003
+    400044: Bone_R.003_end
+    400046: BoneSep
+    400048: bottle
+    400050: BottleSep
+    400052: Cake
+    400054: cakesep
+    400056: CigaretteSep
+    400058: Donuts
+    400060: DonutSep
+    400062: heart
+    400064: HeartSep
+    400066: Human
+    400068: MilkSep
+    400070: MilkSep.001
+    400072: monkey
+    400074: MonkeySep
+    400076: //RootNode
+    400078: Potion
     400080: PotionSep
     400082: sig
     400084: smartphone_low
-    400086: Sword Tape
+    400086: SmartSep
     400088: SwordSep
-    400090: Apple Tape
-    400092: BottleSep
-    400094: MilkSep
     2300000: Bone
     2300002: bottle
-    2300004: Donuts
-    2300006: heart
-    2300008: Milk
+    2300004: Cake
+    2300006: Donuts
+    2300008: heart
     2300010: monkey
     2300012: Potion
     2300014: sig
     2300016: smartphone_low
     3300000: Bone
     3300002: bottle
-    3300004: Donuts
-    3300006: heart
-    3300008: Milk
+    3300004: Cake
+    3300006: Donuts
+    3300008: heart
     3300010: monkey
     3300012: Potion
     3300014: sig
     3300016: smartphone_low
-    4300000: smartphone_low
-    4300002: monkey
-    4300004: Donuts
-    4300006: Milk
+    4300000: Cake
+    4300002: smartphone_low
+    4300004: monkey
+    4300006: Donuts
     4300008: bottle
-    4300010: Human.001
-    4300012: DonutSep
-    4300014: BoneSep
-    4300016: PotionSep
-    4300018: SwordSep
-    4300020: HeartSep
-    4300022: AppleSep
-    4300024: Potion Tape
-    4300026: Bone Tape
-    4300028: Heart Tape
-    4300030: Sword Tape
-    4300032: apple tape
-    4300034: Human
-    4300036: MonkeySep
+    4300010: BottleSep
+    4300012: Human
+    4300014: cakesep
+    4300016: MilkSep.001
+    4300018: MonkeySep
+    4300020: SwordSep
+    4300022: MilkSep
+    4300024: SmartSep
+    4300026: DonutSep
+    4300028: BoneSep
+    4300030: PotionSep
+    4300032: HeartSep
+    4300034: AppleSep
+    4300036: CigaretteSep
     4300038: Bone
     4300040: sig
     4300042: Potion
     4300044: heart
-    4300046: MilkSep
-    4300048: BottleSep
-    4300050: Apple Tape
     7400000: bottle|bottleAction
     7400002: Armature|ArmatureAction.001
     7400004: Armature|bottleAction
     9500000: //RootNode
-    13700000: apple tape
-    13700002: AppleSep
-    13700004: Bone Tape
-    13700006: BoneSep
-    13700008: DonutSep
-    13700010: Heart Tape
+    13700000: AppleSep
+    13700002: BoneSep
+    13700004: BottleSep
+    13700006: cakesep
+    13700008: CigaretteSep
+    13700010: DonutSep
     13700012: HeartSep
     13700014: Human
-    13700016: Human.001
-    13700018: MonkeySep
-    13700020: Potion Tape
+    13700016: MilkSep
+    13700018: MilkSep.001
+    13700020: MonkeySep
     13700022: PotionSep
-    13700024: Sword Tape
+    13700024: SmartSep
     13700026: SwordSep
-    13700028: Apple Tape
-    13700030: BottleSep
-    13700032: MilkSep
   materials:
     importMaterials: 1
     materialName: 0
