@@ -100,7 +100,8 @@ public class StartGameOnCollision : MonoBehaviour {
 	}
 
 	void StoppingTime(bool won){
-		isPlaying = true;
+        Debug.Log(won);
+		isPlaying = false;
 		startCanvas.enabled = true;
 
 		BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();
