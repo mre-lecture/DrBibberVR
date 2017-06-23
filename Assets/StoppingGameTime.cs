@@ -10,6 +10,8 @@ public class StoppingGameTime : MonoBehaviour {
 	private string specificTag;
 	private GameObject instrumentTrolley;
 	private GameObject[] gameObjectsGrab;
+	private List<string> collectedGameObjectsGrab;
+	private int index;
 
 	private Dictionary<string, Vector3> gameObjectsPosition;
 	private Dictionary<string, Quaternion> gameObjectsOrientation;
@@ -20,6 +22,8 @@ public class StoppingGameTime : MonoBehaviour {
 		instrumentTrolley = GameObject.Find ("instrument_trolley");
 		gameObjectsGrab = GameObject.FindGameObjectsWithTag (specificTag);
 		numberOfGrabObjects = gameObjectsGrab.Length - 1;
+		collectedGameObjectsGrab = new List<string>();
+		index = 0;
 
 		gameObjectsPosition = new Dictionary<string, Vector3> ();
 		gameObjectsOrientation = new Dictionary<string,Quaternion> ();
@@ -50,9 +54,13 @@ public class StoppingGameTime : MonoBehaviour {
 
 		if (other.gameObject.CompareTag (specificTag)) {
 
-			countNumberOfGrabObjects += 1;
-//			Destroy(other.GetComponent("Throwable"), 10);
-//			Destroy(other.GetComponent("Interactable"), 10);
+
+				if (!(collectedGameObjectsGrab.Contains(other.gameObject.name))) {
+
+				collectedGameObjectsGrab.Add(other.gameObject.name);
+
+					countNumberOfGrabObjects += 1;
+				}
 
 		}
 	}
