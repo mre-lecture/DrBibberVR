@@ -99,8 +99,8 @@ public class StartGameOnCollision : MonoBehaviour {
 
 	}
 
-	void StoppingTime(bool stopTime){
-		isPlaying = !stopTime;
+	void StoppingTime(bool won){
+		isPlaying = true;
 		startCanvas.enabled = true;
 
 		BoxCollider[] collider = startCube.GetComponents<BoxCollider> ();
@@ -113,6 +113,7 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 
-		insertCube.BroadcastMessage("SetInsertCubeEnabled", true);
+		insertCube.BroadcastMessage("SetInsertCubeEnabled", won);
 	}		
+ 
 }
