@@ -21,8 +21,11 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject organScale;
 	private GameObject deadMan;
 	private GameObject deadManWithHoles;
-
+	private GameObject deadManWithoutHoles;
 	private GameObject insertCube;
+
+	Animation humanAnimation;
+	GameObject parent,human;
 
 	void Awake(){
 		startTime = 0;
@@ -40,6 +43,7 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadMan = GameObject.Find("dead_man");
 		deadManWithHoles = GameObject.Find ("Patient");
 
+
 	}
 
 	// Use this for initialization
@@ -55,10 +59,18 @@ public class StartGameOnCollision : MonoBehaviour {
 				startCanvas = canvas[i];
 			}
 		}
+
 		deadManWithHoles.SetActive (false);
 
         insertCube = GameObject.Find("insertCube");
-  
+
+		//human = GameObject.FindWithTag ("AnimatedHumanTag");
+		//print (human);
+	//	deadMan.gameObject.GetComponent<SkinnedMeshRenderer>().enabled= false;
+
+		humanAnimation = deadMan.GetComponent<Animation> ();
+		humanAnimation.Stop ();
+		Debug.Log (humanAnimation.Stop ());
 
     }
 
@@ -83,6 +95,12 @@ public class StartGameOnCollision : MonoBehaviour {
 			textTime = string.Format ("{0:00}:{1:00}", minutes, seconds);
 			currentTime.text = textTime.ToString ();
 		} 
+		if (Input.GetKeyDown (KeyCode.A)) {
+			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+			humanAnimation.Play ();
+			Debug.Log (humanAnimation.Play ());
+		}
+
 			
 	}
 
@@ -111,6 +129,13 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
+
+//		if (Input.GetKeyDown (KeyCode.A)) {
+//			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+//			humanAnimation.Play ();
+//			Debug.Log (humanAnimation.Play ());
+//		}
+		//humanAnimation.Play ();
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
 

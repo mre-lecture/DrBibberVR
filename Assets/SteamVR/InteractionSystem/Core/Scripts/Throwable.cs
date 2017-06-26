@@ -164,7 +164,7 @@ namespace Valve.VR.InteractionSystem
 
 			Rigidbody rb = GetComponent<Rigidbody>();
 			rb.isKinematic = false;
-			rb.interpolation = RigidbodyInterpolation.None;
+			rb.interpolation = RigidbodyInterpolation.Interpolate;
 
 			Vector3 position = Vector3.zero;
 			Vector3 velocity = Vector3.zero;
