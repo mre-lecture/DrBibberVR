@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: bf465630893b74a63a3e2e5f174a98ce
+timeCreated: 1498175493
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AppleSep
+    100002: Armature
+    100004: Bone
+    100006: Bone 1
+    100008: Bone.001
+    100010: Bone.001_L
+    100012: Bone.001_L.001
+    100014: Bone.001_L.002
+    100016: Bone.001_L.003
+    100018: Bone.001_L.003_end
+    100020: Bone.001_R
+    100022: Bone.001_R.001
+    100024: Bone.001_R.002
+    100026: Bone.001_R.003
+    100028: Bone.001_R.003_end
+    100030: Bone_L.001
+    100032: Bone_L.002
+    100034: Bone_L.003
+    100036: Bone_L.003_end
+    100038: Bone_R.001
+    100040: Bone_R.002
+    100042: Bone_R.003
+    100044: Bone_R.003_end
+    100046: BoneSep
+    100048: bottle
+    100050: BottleSep
+    100052: Cake
+    100054: cakesep
+    100056: CigaretteSep
+    100058: Donuts
+    100060: DonutSep
+    100062: heart
+    100064: HeartSep
+    100066: Human
+    100068: MilkSep
+    100070: MilkSep.001
+    100072: monkey
+    100074: MonkeySep
+    100076: //RootNode
+    100078: Potion
+    100080: PotionSep
+    100082: sig
+    100084: smartphone_low
+    100086: SmartSep
+    100088: SwordSep
+    400000: AppleSep
+    400002: Armature
+    400004: Bone
+    400006: Bone 1
+    400008: Bone.001
+    400010: Bone.001_L
+    400012: Bone.001_L.001
+    400014: Bone.001_L.002
+    400016: Bone.001_L.003
+    400018: Bone.001_L.003_end
+    400020: Bone.001_R
+    400022: Bone.001_R.001
+    400024: Bone.001_R.002
+    400026: Bone.001_R.003
+    400028: Bone.001_R.003_end
+    400030: Bone_L.001
+    400032: Bone_L.002
+    400034: Bone_L.003
+    400036: Bone_L.003_end
+    400038: Bone_R.001
+    400040: Bone_R.002
+    400042: Bone_R.003
+    400044: Bone_R.003_end
+    400046: BoneSep
+    400048: bottle
+    400050: BottleSep
+    400052: Cake
+    400054: cakesep
+    400056: CigaretteSep
+    400058: Donuts
+    400060: DonutSep
+    400062: heart
+    400064: HeartSep
+    400066: Human
+    400068: MilkSep
+    400070: MilkSep.001
+    400072: monkey
+    400074: MonkeySep
+    400076: //RootNode
+    400078: Potion
+    400080: PotionSep
+    400082: sig
+    400084: smartphone_low
+    400086: SmartSep
+    400088: SwordSep
+    2300000: Bone
+    2300002: bottle
+    2300004: Cake
+    2300006: Donuts
+    2300008: heart
+    2300010: monkey
+    2300012: Potion
+    2300014: sig
+    2300016: smartphone_low
+    3300000: Bone
+    3300002: bottle
+    3300004: Cake
+    3300006: Donuts
+    3300008: heart
+    3300010: monkey
+    3300012: Potion
+    3300014: sig
+    3300016: smartphone_low
+    4300000: Cake
+    4300002: smartphone_low
+    4300004: monkey
+    4300006: Donuts
+    4300008: bottle
+    4300010: BottleSep
+    4300012: Human
+    4300014: cakesep
+    4300016: MilkSep.001
+    4300018: MonkeySep
+    4300020: SwordSep
+    4300022: MilkSep
+    4300024: SmartSep
+    4300026: DonutSep
+    4300028: BoneSep
+    4300030: PotionSep
+    4300032: HeartSep
+    4300034: AppleSep
+    4300036: CigaretteSep
+    4300038: Bone
+    4300040: sig
+    4300042: Potion
+    4300044: heart
+    7400000: bottle|bottleAction
+    7400002: Armature|ArmatureAction.001
+    7400004: Armature|bottleAction
+    9500000: //RootNode
+    13700000: AppleSep
+    13700002: BoneSep
+    13700004: BottleSep
+    13700006: cakesep
+    13700008: CigaretteSep
+    13700010: DonutSep
+    13700012: HeartSep
+    13700014: Human
+    13700016: MilkSep
+    13700018: MilkSep.001
+    13700020: MonkeySep
+    13700022: PotionSep
+    13700024: SmartSep
+    13700026: SwordSep
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
