@@ -66,7 +66,6 @@ public class StartGameOnCollision : MonoBehaviour {
 		//human = GameObject.FindWithTag ("AnimatedHumanTag");
 		//print (human);
 	//	deadMan.gameObject.GetComponent<SkinnedMeshRenderer>().enabled= false;
-
 		humanAnimation = deadMan.GetComponent<Animation> ();
 		humanAnimation.Stop ();
 
