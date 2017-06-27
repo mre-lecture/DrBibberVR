@@ -64,7 +64,6 @@ public class StartGameOnCollision : MonoBehaviour {
 
         insertCube = GameObject.Find("insertCube");
 		childDeadman = GameObject.FindWithTag("ManWithoutHoleTag");
-		//human = GameObject.FindWithTag ("AnimatedHumanTag");
 		humanAnimation = deadMan.GetComponent<Animation> ();
 		Debug.Log (humanAnimation);
 		humanAnimation.Stop ();
@@ -93,9 +92,8 @@ public class StartGameOnCollision : MonoBehaviour {
 			currentTime.text = textTime.ToString ();
 		} 
 
-			childDeadman.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+			
 			humanAnimation.Play ();
-			//Debug.Log (humanAnimation.Play ());
 	}
 
 	void OnTriggerEnter(){
@@ -120,13 +118,19 @@ public class StartGameOnCollision : MonoBehaviour {
 		foreach (BoxCollider boxCollider in collider) {
 			boxCollider.enabled = true;
 		}
-		childDeadman.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+		//childDeadman.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
 
 		humanAnimation.Play ();
 
 		trashCan.BroadcastMessage("SetGrabObjectsActive", false);
+
+		if (won) {
+			trashCan.BroadcastMessage ("PlaySoundOnVictory");
+		}else{
+			trashCan.BroadcastMessage ("PlaySoundOnGameLost");
+		}
 
 		insertCube.BroadcastMessage("SetInsertCubeEnabled", won);
 	}		
