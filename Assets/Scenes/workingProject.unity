@@ -5455,7 +5455,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.281
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5492,6 +5492,14 @@ Prefab:
     - target: {fileID: 100032, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
       propertyPath: m_Name
       value: dead_man
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
