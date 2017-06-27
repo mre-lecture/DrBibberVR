@@ -24,9 +24,6 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject deadManWithoutHoles;
 	private GameObject insertCube;
 
-	Animation humanAnimation;
-	GameObject humanWithoutAnim;
-
 	void Awake(){
 		startTime = 0;
 
@@ -63,11 +60,6 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadManWithHoles.SetActive (false);
 
         insertCube = GameObject.Find("insertCube");
-		humanWithoutAnim = GameObject.FindWithTag("HumanWithoutAnimation");
-		//humanWithoutAnim.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
-		humanAnimation = deadMan.GetComponent<Animation> ();
-		//humanAnimation = humanWithoutAnim.GetComponent<Animation>();
-		humanAnimation.Stop ();
 
     }
 
@@ -92,14 +84,10 @@ public class StartGameOnCollision : MonoBehaviour {
 			textTime = string.Format ("{0:00}:{1:00}", minutes, seconds);
 			currentTime.text = textTime.ToString ();
 		} 
-
-		//humanWithoutAnim.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
-		//humanAnimation.Play ();
 	}
 
 	void OnTriggerEnter(){
 		startTime = Time.time;
-		// set isPlaying=false, if all objects are grabbed and dropped to organ scale
 		isPlaying = true;
 
 		deadMan.SetActive (false);
@@ -118,11 +106,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		foreach (BoxCollider boxCollider in collider) {
 			boxCollider.enabled = true;
 		}
-		//childDeadman.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
-
-		//humanAnimation.Play ();
 
 		trashCan.BroadcastMessage("SetGrabObjectsActive", false);
 

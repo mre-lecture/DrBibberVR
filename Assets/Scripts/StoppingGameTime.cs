@@ -22,7 +22,6 @@ public class StoppingGameTime : MonoBehaviour {
 		instrumentTrolley = GameObject.Find ("instrument_trolley");
 		gameObjectsGrab = GameObject.FindGameObjectsWithTag (specificTag);
 		numberOfGrabObjects = gameObjectsGrab.Length - 1;
-		Debug.Log ("Number of GrabObjects " + numberOfGrabObjects);
 
 		collectedGameObjectsGrab = new List<string>();
 		index = 0;
@@ -62,7 +61,6 @@ public class StoppingGameTime : MonoBehaviour {
 				if (!(collectedGameObjectsGrab.Contains(other.gameObject.name))) {
 
 				collectedGameObjectsGrab.Add(other.gameObject.name);
-				Debug.Log ("Name of Grabobject: " + other.gameObject.name + " Number of GrabObjects: " + countNumberOfGrabObjects);
 
 					countNumberOfGrabObjects += 1;
 				}
@@ -81,9 +79,6 @@ public class StoppingGameTime : MonoBehaviour {
 				gameObjectsGrab [i].SetActive (active);
 
 				if (active) {
-//					Debug.Log (gameObjectsGrab [i].name);
-//					Debug.Log (gameObjectsTransform [gameObjectsGrab [i].name].position);
-//					Debug.Log (gameObjectsGrab [i].transform.position);
 					gameObjectsGrab [i].transform.position = gameObjectsPosition [gameObjectsGrab [i].name];
 					gameObjectsGrab [i].transform.rotation = gameObjectsOrientation [gameObjectsGrab [i].name];
 				}

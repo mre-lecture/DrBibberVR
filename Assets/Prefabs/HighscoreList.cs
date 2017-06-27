@@ -11,18 +11,20 @@ public class HighscoreList : MonoBehaviour
 
 	void Start()
 	{
-		list = new List<HighscoreEntry> ();
-	//	addToList ();
 
+		list = new List<HighscoreEntry> ();
+		addToList ();
 	}
 
 	void addToList()
 	{
-		for(int i = 0; i < 10; i++)
+
+        for (int i = 0; i < 10; i++)
 		{
 			if (PlayerPrefs.HasKey ("username" + i)) 
 			{
-				string user = PlayerPrefs.GetString ("username" + i);
+
+                string user = PlayerPrefs.GetString ("username" + i);
 				string time = PlayerPrefs.GetString ("time" + i);
 				HighscoreEntry entry = new HighscoreEntry (user, time);
 				list.Add (entry);
@@ -73,7 +75,6 @@ public class HighscoreList : MonoBehaviour
 	}
 
     void OnTriggerEnter() {
-        Debug.Log(inputTime.text);
         if (!inputTime.text.Equals("00:00")){
             addEntry();
             SetInsertCubeEnabled(false);

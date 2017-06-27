@@ -26,7 +26,6 @@ public class Healthbar : MonoBehaviour {
     {
         if (lifeCounter <= 0)
         {
-            Debug.Log("Loser");
             Reset();
 
         }

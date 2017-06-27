@@ -20,26 +20,14 @@ public class LifeLost : MonoBehaviour {
     }
     void OnTriggerExit(Collider other)
     {
-        Debug.Log(other.gameObject.name);
-      // if(other.transform != null && other.transform.parent != null) {
-      //     Debug.Log(other.transform.parent.gameObject);
-      // }
-       
-        if (other.gameObject.name.Equals("Hand1") || other.gameObject.name.Equals("Hand2") ) 
+
+        if (other.gameObject.name.Equals("Hand1") || other.gameObject.name.Equals("Hand2"))
         {
-            Debug.Log(other.gameObject.name + "TRIGGERED" );
             if (!timer.text.Equals(lastHit))
             {
                 lastHit = timer.text;
-                Debug.Log("lasthit + " + lastHit);
                 life.BroadcastMessage("LifeLost");
             }
-        }/* else if (other.transform  && other.transform.parent != null)
-               Debug.Log(other.gameObject.name + " Parent TRIGGERED");
-  
-                life.BroadcastMessage("LifeLost");
-            }
-            }*/
-
+        }
     }
 }
