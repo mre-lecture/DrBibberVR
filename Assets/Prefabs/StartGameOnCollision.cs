@@ -25,7 +25,6 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject insertCube;
 
 	Animation humanAnimation;
-	GameObject parent,human;
 
 	void Awake(){
 		startTime = 0;
@@ -70,7 +69,6 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		humanAnimation = deadMan.GetComponent<Animation> ();
 		humanAnimation.Stop ();
-		Debug.Log (humanAnimation.Stop ());
 
     }
 
@@ -130,11 +128,11 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
 
-//		if (Input.GetKeyDown (KeyCode.A)) {
-//			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
-//			humanAnimation.Play ();
-//			Debug.Log (humanAnimation.Play ());
-//		}
+		if (Input.GetKeyDown (KeyCode.A)) {
+			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+			humanAnimation.Play ();
+			Debug.Log (humanAnimation.Play ());
+		}
 		//humanAnimation.Play ();
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
