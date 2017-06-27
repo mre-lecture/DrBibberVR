@@ -67,8 +67,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		//print (human);
 	//	deadMan.gameObject.GetComponent<SkinnedMeshRenderer>().enabled= false;
 
-		humanAnimation = deadMan.GetComponent<Animation> ();
-		humanAnimation.Stop ();
+	//	humanAnimation = deadMan.GetComponent<Animation> ();
+	//	humanAnimation.Stop ();
 
     }
 
@@ -93,13 +93,10 @@ public class StartGameOnCollision : MonoBehaviour {
 			textTime = string.Format ("{0:00}:{1:00}", minutes, seconds);
 			currentTime.text = textTime.ToString ();
 		} 
-		if (Input.GetKeyDown (KeyCode.A)) {
-			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
-			humanAnimation.Play ();
-			Debug.Log (humanAnimation.Play ());
-		}
 
-			
+			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+			//humanAnimation.Play ();
+			//Debug.Log (humanAnimation.Play ());
 	}
 
 	void OnTriggerEnter(){
@@ -128,11 +125,9 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
 
-		if (Input.GetKeyDown (KeyCode.A)) {
 			//human.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
-			humanAnimation.Play ();
-			Debug.Log (humanAnimation.Play ());
-		}
+			//humanAnimation.Play ();
+			//Debug.Log (humanAnimation.Play ());
 		//humanAnimation.Play ();
 
 		organScale.BroadcastMessage("SetGrabObjectsActive", false);
