@@ -2366,7 +2366,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ddc145062be0e4538a78835947f12352, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60a748c3872946edb2a819f888f28d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2635,7 +2635,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ddc145062be0e4538a78835947f12352, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60a748c3872946edb2a819f888f28d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4305,6 +4305,76 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1038649880157394, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535947353186888, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1529692938347312, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686806981869080, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744598226248028, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314160974444712, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285691414016532, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883041788386090, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1529099807964564, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713267872580804, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1051500991772938, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888087915128338, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547858391800914, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421313080284232, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: StopTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750832181025440, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
+      propertyPath: m_TagString
+      value: StopTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 54576817428304684, guid: a5488b0bf226e4aa09cc53aecad0d555,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54576817428304684, guid: a5488b0bf226e4aa09cc53aecad0d555,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a5488b0bf226e4aa09cc53aecad0d555, type: 2}
   m_IsPrefabParent: 0
@@ -5895,7 +5965,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0af91203f77514ee58fdc14cd90bb2bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc3e4ee52e37b47949803a4a18f84ec4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8950,7 +9020,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ddc145062be0e4538a78835947f12352, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60a748c3872946edb2a819f888f28d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10614,7 +10684,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ddc145062be0e4538a78835947f12352, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60a748c3872946edb2a819f888f28d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12538,7 +12608,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ddc145062be0e4538a78835947f12352, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c60a748c3872946edb2a819f888f28d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
