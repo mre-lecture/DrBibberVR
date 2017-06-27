@@ -5459,7 +5459,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100032, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abb8738f07cf749d79e3a728bdff8e62, type: 3}
@@ -13477,8 +13477,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 58.63241, y: 21.832724, z: 58.632435}
-  m_Center: {x: 0, y: 10.916362, z: 0}
+  m_Size: {x: 58.63241, y: 48.10926, z: 58.63243}
+  m_Center: {x: 0, y: 24.05463, z: 0}
 --- !u!114 &1945625766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13509,7 +13509,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945625764}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 58.63241, y: 69.73878, z: 1.9510953}
@@ -13533,7 +13533,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945625764}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 58.63241, y: 69.73878, z: 2.5598166}
@@ -13545,7 +13545,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945625764}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.160251, y: 69.73878, z: 58.632435}
@@ -13641,6 +13641,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!65 &1945625774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945625764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 58.63241, y: 21.832724, z: 58.632435}
+  m_Center: {x: 0, y: 10.916362, z: 0}
 --- !u!20 &1949900389 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,

@@ -18,7 +18,7 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject startCube;
 	private Canvas startCanvas;
 
-	private GameObject organScale;
+	private GameObject trashCan;
 	private GameObject deadMan;
 	private GameObject deadManWithHoles;
 	private GameObject deadManWithoutHoles;
@@ -37,7 +37,7 @@ public class StartGameOnCollision : MonoBehaviour {
 			}
 		}
 
-		organScale = GameObject.Find ("organ_scale");
+		trashCan = GameObject.Find ("trash_can");
 
 		deadMan = GameObject.Find("dead_man");
 		deadManWithHoles = GameObject.Find ("Patient");
@@ -67,8 +67,8 @@ public class StartGameOnCollision : MonoBehaviour {
 		//print (human);
 	//	deadMan.gameObject.GetComponent<SkinnedMeshRenderer>().enabled= false;
 
-	//	humanAnimation = deadMan.GetComponent<Animation> ();
-	//	humanAnimation.Stop ();
+		humanAnimation = deadMan.GetComponent<Animation> ();
+		humanAnimation.Stop ();
 
     }
 
@@ -106,7 +106,7 @@ public class StartGameOnCollision : MonoBehaviour {
 
 		deadMan.SetActive (false);
 		deadManWithHoles.SetActive (true);
-		organScale.BroadcastMessage("SetGrabObjectsActive", true);
+		trashCan.BroadcastMessage("SetGrabObjectsActive", true);
 
         insertCube.BroadcastMessage("SetInsertCubeEnabled", false);
 
@@ -130,7 +130,7 @@ public class StartGameOnCollision : MonoBehaviour {
 			//Debug.Log (humanAnimation.Play ());
 		//humanAnimation.Play ();
 
-		organScale.BroadcastMessage("SetGrabObjectsActive", false);
+		trashCan.BroadcastMessage("SetGrabObjectsActive", false);
 
 		insertCube.BroadcastMessage("SetInsertCubeEnabled", won);
 	}		

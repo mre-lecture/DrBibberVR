@@ -49,7 +49,9 @@ public class StoppingGameTime : MonoBehaviour {
 		if (numberOfGrabObjects == countNumberOfGrabObjects) {
 			instrumentTrolley.BroadcastMessage ("StoppingTime", true);
 			countNumberOfGrabObjects = 0;
-		}
+            collectedGameObjectsGrab.Clear();
+
+        }
 	}
 
 	void OnTriggerEnter(Collider other) {
