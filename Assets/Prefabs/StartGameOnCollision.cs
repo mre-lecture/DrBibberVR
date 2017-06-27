@@ -25,7 +25,7 @@ public class StartGameOnCollision : MonoBehaviour {
 	private GameObject insertCube;
 
 	Animation humanAnimation;
-	GameObject childDeadman;
+	GameObject humanWithoutAnim;
 
 	void Awake(){
 		startTime = 0;
@@ -63,9 +63,10 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadManWithHoles.SetActive (false);
 
         insertCube = GameObject.Find("insertCube");
-		childDeadman = GameObject.FindWithTag("ManWithoutHoleTag");
+		humanWithoutAnim = GameObject.FindWithTag("HumanWithoutAnimation");
+		//humanWithoutAnim.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
 		humanAnimation = deadMan.GetComponent<Animation> ();
-		Debug.Log (humanAnimation);
+		//humanAnimation = humanWithoutAnim.GetComponent<Animation>();
 		humanAnimation.Stop ();
 
     }
@@ -92,8 +93,8 @@ public class StartGameOnCollision : MonoBehaviour {
 			currentTime.text = textTime.ToString ();
 		} 
 
-			
-			humanAnimation.Play ();
+		//humanWithoutAnim.gameObject.GetComponent<SkinnedMeshRenderer> ().enabled = true;
+		//humanAnimation.Play ();
 	}
 
 	void OnTriggerEnter(){
@@ -110,7 +111,6 @@ public class StartGameOnCollision : MonoBehaviour {
 	}
 
 	void StoppingTime(bool won){
-        Debug.Log(won);
 		isPlaying = false;
 		startCanvas.enabled = true;
 
@@ -122,7 +122,7 @@ public class StartGameOnCollision : MonoBehaviour {
 		deadMan.SetActive (true);
 		deadManWithHoles.SetActive (false);
 
-		humanAnimation.Play ();
+		//humanAnimation.Play ();
 
 		trashCan.BroadcastMessage("SetGrabObjectsActive", false);
 
